@@ -1,0 +1,13 @@
+apply plugin: "kotlin"
+apply plugin: "kotlin-kapt"
+
+dependencies {
+    api project(":service:name")
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.google.dagger:dagger:2.24"
+    kapt "com.google.dagger:dagger-compiler:2.24"
+    implementation project(":core")
+
+    compileOnly project(":viewmodels")
+}

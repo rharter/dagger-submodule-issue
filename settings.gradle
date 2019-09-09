@@ -1,0 +1,2 @@
+include ':app', ':core', ':feature-main:core', ':feature-main:android', ':service:name', ':viewmodels'
+rootProject.name='Dagger Test'
