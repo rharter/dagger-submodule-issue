@@ -21,8 +21,7 @@ abstract class MainModule {
         @Provides
         @JvmStatic
         @PerActivity
-        fun provideStringFormatter(nameService: NameService): StringFormatter =
-            StringFormatter(nameService, 4)
+        fun provideStringFormatter(nameService: NameService): StringFormatter = StringFormatter(nameService, 4)
 
         @Provides
         @JvmStatic

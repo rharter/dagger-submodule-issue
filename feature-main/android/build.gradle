@@ -37,6 +37,6 @@ dependencies {
     implementation project(":core")
 
     // Herein lies the problem.  Switch this to `api` and things work.
-//    implementation project(":feature-main:core")
-    api project(":feature-main:core")
+    implementation project(":feature-main:core")
+//    api project(":feature-main:core")
 }
